@@ -1,0 +1,24 @@
+local dupeitem = ""
+local trade = nil
+local player = game.Players.LocalPlayer
+local DupedItems = false
+
+function AttemptDupe(item)
+ --// Time to do duping
+ if player.Weapons : dupeitem or player.Skins : dupeitem or player.Armors : dupeitem or player.SOULs : dupeitem then
+ print("Duping Item...")
+ local trade = {}
+ for i,v in pairs(trade:GetChildren()) do
+ v.Clone() : player:ItemFolder()
+ v:Check() = nil then return end
+ end
+ if trade : MaximumItems() then
+ DupedItems = true
+ if DupedItems then
+ print("Duped successfully...")
+ else
+ player:Kick("Duping didnt work.")
+ end
+--// bY REALLYSCARYHACKER38248328243288432
+
+end
